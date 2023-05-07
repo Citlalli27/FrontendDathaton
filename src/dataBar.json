@@ -1,0 +1,15 @@
+{
+  "title": "Transacciones",
+  "labels": ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio","JuLio","Agosto","Septiembre","Octubre"],
+  "values": [12, 19, 3, 5, 2, 19, 3, 5, 2,1],
+  "colors": [ "#FC63FA",
+  "#FEDFDD",
+  "#D6D5FF",
+  "#B9B8FF",
+  "#77B6E9",
+  "#16E7FC",
+  "#EAF8AE",
+  "#BDFF40",
+  "#01E07A",
+  "#F0D024"]
+}

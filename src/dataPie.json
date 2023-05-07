@@ -1,0 +1,21 @@
+{
+    "labels": ["Enero", "Febrero", "Marzo", "Abril", "Mayo","Junio", "Julio", "Agosto", "Septiembre", "Octubre"],
+    "datasets": [
+      {
+        "data": [0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1,0.1],
+        "backgroundColor": [
+          "#FC63FA",
+          "#FEDFDD",
+          "#D6D5FF",
+          "#B9B8FF",
+          "#77B6E9",
+          "#16E7FC",
+          "#EAF8AE",
+          "#BDFF40",
+          "#01E07A",
+          "#F0D024"
+        ]
+      }
+    ]
+  }
+  
