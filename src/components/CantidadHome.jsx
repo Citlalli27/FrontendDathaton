@@ -21,7 +21,7 @@ const CantidadHome = () => {
   }
   return (
     <div className='bg-[#B9B8FF] py-8 text-white'>
-        <h1 className='max-w-[1000px] w-full  mx-12 md:text-7x1 sm:text.6xl text-4xl font-bold p-2 md:py-3'>¡Bienveni    cliente #{userId}!  </h1>
+        <h1 className='max-w-[1000px] w-full  mx-12 md:text-5xl sm:text-4xl text-3xl font-bold p-2 md:py-3'>¡Bienvenido cliente #{userId}!  </h1>
         <h2 className='flex justify-center items-center w-full my-10 mx-4 md:text-2x1 sm:text-2>l text-2xl  p-2 md:py-0.5'>Este mes gastaste ${totals != null ? totals[Object.keys(totals)[0]] : "Loading..."} , ¡tuviste más de {parseInt(Math.random() * 100)} transacciones al mes! </h2>
     </div>
   )
