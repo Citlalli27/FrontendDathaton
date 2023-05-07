@@ -1,13 +1,13 @@
 import React from 'react'
-import Categoria from './Categoria'
 
-const CategoriaContainer = () => {
+
+const CategoriaContainer = (props) => {
   return (
-    <div>
-      <Categoria/>
-      <input type="checkbox" class=" w-10 h-10 checked:bg-[#B9B8FF]  mx-12 w-[800px] md:w-[800px] sm:w-[800px] w-[800px] p-10 left-10 px-10'" />
+    <div className=' w-full md:w-1/2 px-2'>
+     {props.children}
     </div>
   )
 }
 
 export default CategoriaContainer
+ 

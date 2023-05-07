@@ -1,0 +1,24 @@
+ {
+    "1": { 
+        "mcc1": {
+            "monto": 100,
+            "transacciones": 3
+        },
+        "mcc2": {
+            "monto": 100,
+            "transacciones": 3
+        }
+
+        },
+        "2": { 
+            "mcc1": {
+                "monto": 100,
+                "transacciones": 3
+            },
+            "mcc2": {
+                "monto": 100,
+                "transacciones": 3
+            }
+    
+            }   
+}
