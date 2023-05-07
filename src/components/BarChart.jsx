@@ -1,20 +1,23 @@
 import React from 'react';
 import { Bar } from 'react-chartjs-2';
 import 'chart.js/auto';
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useContext } from 'react'
 import axios from 'axios'
+import { UserIdContext } from "../App";
+
 
 const BarChart = ({ data }) => {
 
   const [histograms, setHistograms] = useState()
-  const [userId, setUserId] = useState(3423)
+  const currentUserId = useContext(UserIdContext);
+ 
 
   useEffect(() => {
     getData()
   }, [])
 
    const getData = () => {
-    axios.get('http://127.0.0.1:5000/histograms?client_id=' + userId)
+    axios.get('http://127.0.0.1:5000/histograms?client_id=' + currentUserId)
       .then((response) => {
         setHistograms(response.data)
       console.log("Histo", response.data[Object.keys(response.data)[0]]["mcc"]);

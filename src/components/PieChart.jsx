@@ -1,20 +1,23 @@
 import React from 'react';
 import { Pie } from 'react-chartjs-2';
 import 'chart.js/auto';
-import { useState, useEffect } from 'react'
+import { useState, useEffect , useContext} from 'react'
 import axios from 'axios'
+import { UserIdContext } from "../App";
+
 
 const PieChart = ({ data }) => {
 
   const [pies, setPies] = useState()
-  const [userId, setUserId] = useState(3432)
+  const currentUserId = useContext(UserIdContext);
+
 
   useEffect(() => {
     getData()
   }, [])
 
    const getData = () => {
-    axios.get('http://127.0.0.1:5000/pies?client_id=' + userId)
+    axios.get('http://127.0.0.1:5000/pies?client_id=' + currentUserId)
       .then((response) => {
         setPies(response.data)
       console.log("sjksjs", response.data);
