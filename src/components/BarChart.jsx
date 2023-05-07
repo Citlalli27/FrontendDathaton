@@ -7,7 +7,7 @@ import axios from 'axios'
 const BarChart = ({ data }) => {
 
   const [histograms, setHistograms] = useState()
-  const [userId, setUserId] = useState(1000)
+  const [userId, setUserId] = useState(3423)
 
   useEffect(() => {
     getData()

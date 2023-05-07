@@ -7,7 +7,7 @@ import axios from 'axios'
 const PieChart = ({ data }) => {
 
   const [pies, setPies] = useState()
-  const [userId, setUserId] = useState(1000)
+  const [userId, setUserId] = useState(3432)
 
   useEffect(() => {
     getData()
